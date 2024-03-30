@@ -1,27 +1,64 @@
 {
-    "products": [
-        {
-            "id": 1 ,
-            "name": "Computer",
-            "price": 10000, 
-            "checked": false
-        },
-        {
-            "id": 2 ,
-             "name": "Printer ",
-              "price": 2500, 
-              "checked": true 
-        },
-        {
-            "id": 3 , 
-            "name": "Phone   ", 
-            "price": 5000, 
-            "checked": false
-        },{
-            "id": 4 , 
-            "name": "Tablet  ", 
-            "price": 3000, 
-            "checked": false
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Computer",
+      "price": 10000,
+      "checked": true
+    },
+    {
+      "id": "2",
+      "name": "Laptop  ",
+      "price": 20000,
+      "checked": false
+    },
+    {
+      "id": "3",
+      "name": "Phone   ",
+      "price": 5000,
+      "checked": false
+    },
+    {
+      "id": "4",
+      "name": "Tablet  ",
+      "price": 1000,
+      "checked": false
+    },
+    {
+      "id": "5",
+      "name": "Watch   ",
+      "price": 500,
+      "checked": false
+    },
+    {
+      "id": "6",
+      "name": "Headphone",
+      "price": 100,
+      "checked": false
+    },
+    {
+      "id": "7",
+      "name": "Speaker",
+      "price": 200,
+      "checked": false
+    },
+    {
+      "id": "8",
+      "name": "Camera",
+      "price": 300,
+      "checked": false
+    },
+    {
+      "id": "9",
+      "name": "Printer",
+      "price": 400,
+      "checked": false
+    },
+    {
+      "id": "10",
+      "name": "Scanner",
+      "price": 500,
+      "checked": false
+    }
+  ]
 }
