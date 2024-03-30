@@ -10,8 +10,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./products.component.css'] // Changed styleUrl to styleUrls
 })
 export class ProductsComponent implements OnInit {
-  products: Array<Product>=[] ;
-
+  public products: Array<Product>=[] ;
+  public  keyword: string = '';
   constructor(private productService:ProductService) {}
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class ProductsComponent implements OnInit {
   }
 
   getProducts() {
-    this.productService.getProducts().subscribe({
+    this.productService.getProducts(1,3).subscribe({
       next: data => {
         this.products = data;
       },
@@ -45,6 +45,14 @@ export class ProductsComponent implements OnInit {
       next: value => {
         // this.getProducts();
         this.products = this.products.filter(p => p.id !== product.id);
+      }
+    });
+  }
+
+  searchProducts() {  
+    this.productService.searchProducts(this.keyword).subscribe({
+      next: data => {
+        this.products = data;
       }
     });
   }

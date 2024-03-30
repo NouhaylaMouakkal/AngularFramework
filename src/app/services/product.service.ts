@@ -13,8 +13,8 @@ export class ProductService {
     this.http = http;
   }
 
-  public getProducts(): Observable<Array<Product>> {
-    return this.http.get<Array<Product>>('http://localhost:8089/products') as Observable<any>;
+  public getProducts(page: number=1 , size: number=4): Observable<Array<Product>> {
+    return this.http.get<Array<Product>>(`http://localhost:8089/products?_page=${page}&_limit=${size}`) as Observable<any>;
   }
 
   public checkProduct(product: Product): Observable<any> {
@@ -26,5 +26,8 @@ export class ProductService {
   }
   public saveProduct(product: Product): Observable<Product> {
     return this.http.post<Product>(`http://localhost:8089/products`, product) as Observable<any>;
+  }
+  public searchProducts(keyword: string): Observable<Array<Product>> {
+    return this.http.get<Array<Product>>(`http://localhost:8089/products?name_like=${keyword}`);
   }
 }
