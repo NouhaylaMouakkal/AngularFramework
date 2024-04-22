@@ -3,7 +3,7 @@
     {
       "id": "2",
       "name": "Laptop  ",
-      "price": 20000,
+      "price": 255,
       "checked": true
     },
     {
@@ -42,10 +42,10 @@
       "price": "3800"
     },
     {
-      "id": "ba21",
-      "name": "Nouhayla Mouakkal",
-      "price": "0",
-      "checked": true
+      "name": "imad samadi",
+      "price": -4,
+      "checked": true,
+      "id": "uLGCefS"
     }
   ]
 }
